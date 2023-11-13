@@ -2,10 +2,11 @@ import { FC, useState } from "react";
 import InfoSidebar from "./components/InfoSidebar";
 import InfoView from "./components/InfoView";
 import AccountType from "./components/AccountType";
-import AccountDetails from "./components/AccountDetails";
 import CreatorInfo from "./components/CreatorInfo";
 import Completed from "./components/Completed";
 import { FlowStep } from "./components/types";
+import PersonalInfo from "./components/PersonalInfo";
+import Verification from "./components/Verification";
 
 const flowSteps: FlowStep[] = [
   {
@@ -19,14 +20,14 @@ const flowSteps: FlowStep[] = [
     id: 2,
     title: "Personal Info",
     subTitle: "Setup your personal Info",
-    component: <AccountDetails />,
+    component: <PersonalInfo />,
     isCompleted: false,
   },
   {
     id: 3,
     title: "Verifivcation",
     subTitle: "Verify your account.",
-    component: <AccountDetails />,
+    component: <Verification />,
     isCompleted: false,
   },
   {

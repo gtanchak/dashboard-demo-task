@@ -58,8 +58,8 @@ const Layout = () => {
     <div className="page">
       {/* <AsideDefault /> */}
       <NavbarComponent />
-      <div className="wrapper d-flex main-container" id="kt_wrapper">
-        <div className="sidebar-container">
+      <div className="d-flex main-container" id="kt_wrapper">
+        <div className="sidebar-container border-end">
           {sidebarOptions.map((option) => {
             return (
               <NavLink

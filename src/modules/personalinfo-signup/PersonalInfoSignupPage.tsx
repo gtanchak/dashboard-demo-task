@@ -17,20 +17,27 @@ const flowSteps: FlowStep[] = [
   },
   {
     id: 2,
-    title: "Account Details",
-    subTitle: "Add your personal info",
+    title: "Personal Info",
+    subTitle: "Setup your personal Info",
     component: <AccountDetails />,
     isCompleted: false,
   },
   {
     id: 3,
+    title: "Verifivcation",
+    subTitle: "Verify your account.",
+    component: <AccountDetails />,
+    isCompleted: false,
+  },
+  {
+    id: 4,
     title: "Creator Info",
     subTitle: "Setup your business details",
     component: <CreatorInfo />,
     isCompleted: false,
   },
   {
-    id: 4,
+    id: 5,
     title: "Completed",
     subTitle: "Your account is created",
     component: <Completed />,
@@ -38,7 +45,7 @@ const flowSteps: FlowStep[] = [
   },
 ];
 
-const MultiStepSignupPage: FC = () => {
+const PersonalInfoSignupPage: FC = () => {
   const [steps, setSteps] = useState<FlowStep[]>(flowSteps);
   const [activeStep, setActiveStep] = useState(0);
   console.log(steps, "steps");
@@ -60,4 +67,4 @@ const MultiStepSignupPage: FC = () => {
   );
 };
 
-export default MultiStepSignupPage;
+export default PersonalInfoSignupPage;

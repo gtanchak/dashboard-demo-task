@@ -1,23 +1,36 @@
-import { useState } from "react";
-
-const Stepper = ({ steps, initialStep = 0 }: any) => {
-  const [currentStep, setCurrentStep] = useState(initialStep);
-
+const Stepper = ({ steps, setSteps, activeStep, setActiveStep }: any) => {
   const handleNext = () => {
-    setCurrentStep((prevStep: any) => Math.min(prevStep + 1, steps.length - 1));
+    setActiveStep((prevStep: any) => Math.min(prevStep + 1, steps.length - 1));
+
+    const updatedData = steps.map((item: any) => {
+      if (item.id === activeStep + 1) {
+        return { ...item, isCompleted: true };
+      }
+      return item;
+    });
+
+    setSteps(updatedData);
   };
 
   const handlePrev = () => {
-    setCurrentStep((prevStep: any) => Math.max(prevStep - 1, 0));
+    setActiveStep((prevStep: any) => Math.max(prevStep - 1, 0));
+    const updatedData = steps.map((item: any) => {
+      if (item.id === activeStep) {
+        return { ...item, isCompleted: false };
+      }
+      return item;
+    });
+
+    setSteps(updatedData);
   };
 
   return (
     <>
-      <div>{steps[currentStep]}</div>
-      <div>
+      <div>{steps[activeStep].component}</div>
+      <div className="d-flex flex-stack pt-15 ">
         <button
           onClick={handlePrev}
-          disabled={currentStep === 0}
+          disabled={activeStep === 0}
           className="btn btn-lg btn-light-primary"
         >
           Previous
@@ -25,7 +38,7 @@ const Stepper = ({ steps, initialStep = 0 }: any) => {
         <button
           className="btn btn-lg btn-primary"
           onClick={handleNext}
-          disabled={currentStep === steps.length - 1}
+          disabled={activeStep === steps.length - 1}
         >
           Continue
         </button>

@@ -1,10 +1,10 @@
-import { Button } from "react-bootstrap";
+import PersonalInfoSignupPage from "../modules/personalinfo-signup/PersonalInfoSignupPage";
 
 const PersonlaInfoSignup = () => {
   return (
-    <div>
-      <Button className="btn btn-primary">PersonlaInfoSignup</Button>
-    </div>
+    <>
+      <PersonalInfoSignupPage />
+    </>
   );
 };
 

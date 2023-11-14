@@ -84,13 +84,7 @@ const DashboardPage: FC = () => {
               <FontAwesomeIcon icon={faUpload} className="me-2" />
               Export
             </button>
-            <select
-              className="form-select form-select-solid me-3"
-              data-control="select2"
-              data-hide-search="true"
-              data-placeholder="Status"
-              data-kt-ecommerce-product-filter="status"
-            >
+            <select className="form-select form-select-solid me-3">
               <option value="today" selected>
                 Today
               </option>
@@ -98,13 +92,7 @@ const DashboardPage: FC = () => {
               <option value="week">This Week</option>
               <option value="month">This Month</option>
             </select>
-            <select
-              className="form-select form-select-solid"
-              data-control="select2"
-              data-hide-search="true"
-              data-placeholder="Status"
-              data-kt-ecommerce-product-filter="status"
-            >
+            <select className="form-select form-select-solid">
               <option value="status" selected>
                 Status
               </option>

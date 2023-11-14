@@ -1,11 +1,7 @@
 import PersonalInfoSignupPage from "../modules/personalinfo-signup/PersonalInfoSignupPage";
 
 const PersonlaInfoSignup = () => {
-  return (
-    <>
-      <PersonalInfoSignupPage />
-    </>
-  );
+  return <PersonalInfoSignupPage />;
 };
 
 export default PersonlaInfoSignup;

@@ -1,11 +1,7 @@
 import DashboardPage from "../modules/dashboard/DashboardPage";
 
 const Dashboard = () => {
-  return (
-    <>
-      <DashboardPage />
-    </>
-  );
+  return <DashboardPage />;
 };
 
 export default Dashboard;

@@ -76,36 +76,41 @@ const DashboardPage: FC = () => {
             </div>
           </div>
 
-          <div className="card-toolbar">
-            <div
-              className="d-flex justify-content-end"
-              data-kt-customer-table-toolbar="base"
+          <div className="card-toolbar d-flex">
+            <button
+              type="button"
+              className="btn btn-light-primary me-3 d-flex flex-fill"
             >
-              <button type="button" className="btn btn-light-primary me-3">
-                <FontAwesomeIcon icon={faUpload} className="me-2" />
-                Export
-              </button>
-            </div>
-
-            <div
-              className="d-flex justify-content-end align-items-center d-none"
-              data-kt-customer-table-toolbar="selected"
+              <FontAwesomeIcon icon={faUpload} className="me-2" />
+              Export
+            </button>
+            <select
+              className="form-select form-select-solid me-3"
+              data-control="select2"
+              data-hide-search="true"
+              data-placeholder="Status"
+              data-kt-ecommerce-product-filter="status"
             >
-              <div className="fw-bold me-5">
-                <span
-                  className="me-2"
-                  data-kt-customer-table-select="selected_count"
-                ></span>
-                Selected
-              </div>
-              <button
-                type="button"
-                className="btn btn-danger"
-                data-kt-customer-table-select="delete_selected"
-              >
-                Delete Selected
-              </button>
-            </div>
+              <option value="today" selected>
+                Today
+              </option>
+              <option value="yesterday">Yesterday</option>
+              <option value="week">This Week</option>
+              <option value="month">This Month</option>
+            </select>
+            <select
+              className="form-select form-select-solid"
+              data-control="select2"
+              data-hide-search="true"
+              data-placeholder="Status"
+              data-kt-ecommerce-product-filter="status"
+            >
+              <option value="status" selected>
+                Status
+              </option>
+              <option value="removed">Removed</option>
+              <option value="delisted">Delisted</option>
+            </select>
           </div>
         </div>
 

@@ -1,6 +1,7 @@
-import { Container, Navbar, Image } from "react-bootstrap";
+import { Navbar, Image } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const NavbarComponent = () => {
   return (
@@ -19,6 +20,14 @@ const NavbarComponent = () => {
           />
         </Navbar.Brand>
         <div className="d-flex flex-stack gap-4">
+          <div
+            className="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-30px h-30px w-md-35px h-md-35px"
+            data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+            data-kt-menu-attach="parent"
+            data-kt-menu-placement="bottom-end"
+          >
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          </div>
           <div
             className="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-30px h-30px w-md-35px h-md-35px"
             data-kt-menu-trigger="{default: 'click', lg: 'hover'}"

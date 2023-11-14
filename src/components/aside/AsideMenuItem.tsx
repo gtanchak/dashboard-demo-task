@@ -14,7 +14,6 @@ const AsideMenuItem: FC<Props> = ({
   children,
   to,
   title,
-  icon,
   fontIcon,
   hasBullet = false,
 }) => {

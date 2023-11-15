@@ -19,7 +19,7 @@ const NavbarComponent = () => {
         {/* Navbar Brand with a logo */}
         <Navbar.Brand href="#home">
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             className="d-inline-block align-top"
             alt="React Bootstrap logo"
           />
@@ -27,18 +27,17 @@ const NavbarComponent = () => {
 
         {/* Container for additional icons and user image */}
         <div className="d-flex flex-stack gap-4">
-          {/* Search icon button */}
-          <div className="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-30px h-30px w-md-35px h-md-35px">
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
-          </div>
-
           {/* Bell icon button with notification badge */}
           <div className="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-30px h-30px w-md-35px h-md-35px">
             <FontAwesomeIcon icon={faBell} />
             {/* Notification badge */}
             <div className="badge badge-circle badge-danger position-absolute translate-middle bottom-0 ms-10 mt-10 h-15px w-15px fs-9 text-white">
-              5
+              0
             </div>
+          </div>
+          {/* Search icon button */}
+          <div className="btn btn-icon btn-custom btn-icon-muted btn-active-light btn-active-color-primary w-30px h-30px w-md-35px h-md-35px">
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
           </div>
 
           {/* User profile image */}

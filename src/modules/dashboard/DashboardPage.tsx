@@ -15,7 +15,7 @@ const DashboardPage: FC = () => {
           <div className="card-header pt-5 gap-10">
             <div>
               <h3 className="fs-2hx fw-bold text-gray-900 me-2 lh-1 ls-n2">
-                252
+                638
               </h3>
               <p className="text-muted pt-1 fw-semibold fs-6">Links Scraped</p>
             </div>
@@ -26,7 +26,7 @@ const DashboardPage: FC = () => {
           <div className="card-header pt-5 gap-10">
             <div>
               <h3 className="fs-2hx fw-bold text-gray-900 me-2 lh-1 ls-n2">
-                252
+                300
               </h3>
               <p className="text-muted pt-1 fw-semibold fs-6">
                 Links Manually Checked
@@ -39,7 +39,7 @@ const DashboardPage: FC = () => {
           <div className="card-header pt-5 gap-10">
             <div>
               <h3 className="fs-2hx fw-bold text-gray-900 me-2 lh-1 ls-n2">
-                252
+                132
               </h3>
               <p className="text-muted pt-1 fw-semibold fs-6">
                 Link Violations
@@ -52,7 +52,7 @@ const DashboardPage: FC = () => {
           <div className="card-header pt-5 gap-10">
             <div>
               <h3 className="fs-2hx fw-bold text-gray-900 me-2 lh-1 ls-n2">
-                252
+                900
               </h3>
               <p className="text-muted pt-1 fw-semibold fs-6">Links Removed</p>
             </div>
@@ -157,18 +157,18 @@ const DashboardPage: FC = () => {
             </button>
             <div className="d-flex gap-2">
               <button
-                className="border rounded p-1 btn btn-secondary fs-2"
+                className="border rounded p-1 btn btn-secondary"
                 onClick={() => table.previousPage()}
                 disabled={!table.getCanPreviousPage()}
               >
-                {"<"}
+                Prev
               </button>
               <button
-                className="border rounded p-1 btn btn-secondary fs-2"
+                className="border rounded p-1 btn btn-secondary"
                 onClick={() => table.nextPage()}
                 disabled={!table.getCanNextPage()}
               >
-                {">"}
+                Next
               </button>
             </div>
           </div>

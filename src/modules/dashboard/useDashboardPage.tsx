@@ -22,15 +22,28 @@ const useDashboardPage = () => {
 
   // Definition of columns for the table
   const columns = [
+    columnHelper.accessor("check", {
+      enableSorting: false,
+      cell: () => (
+        <div className="form-check form-check-sm form-check-custom form-check-solid me-3 ">
+          <input className="form-check-input" type="checkbox" value="1" />
+        </div>
+      ),
+      header: () => (
+        <div className="form-check form-check-sm form-check-custom form-check-solid me-3">
+          <input className="form-check-input" type="checkbox" value="1" />
+        </div>
+      ),
+    }),
     // Column for 'id'
     columnHelper.accessor("id", {
-      cell: (info) => info.getValue(),
+      cell: (info) => <strong>{info.getValue()}</strong>,
     }),
 
     // Column for 'dateRemoved'
     columnHelper.accessor((row) => row.dateRemoved, {
       id: "dateRemoved",
-      cell: (info) => <i>{info.getValue()}</i>,
+      cell: (info) => <span className="text-muted">{info.getValue()}</span>,
       header: () => <span>Date Removed</span>,
     }),
 

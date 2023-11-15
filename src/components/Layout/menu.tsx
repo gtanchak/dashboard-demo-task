@@ -1,20 +1,24 @@
-import HomeSVG from "../../assets/svg/HomeSVG";
-import SettingsSVG from "../../assets/svg/SettingsSVG";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouse,
+  faRightToBracket,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const sidebarOptions = [
   {
-    title: "Home",
-    icon: <HomeSVG />,
+    title: "Dashboard",
+    icon: <FontAwesomeIcon icon={faHouse} />,
     url: "/dashboard",
   },
   {
-    title: "MultiStep Signup",
-    icon: <SettingsSVG />,
-    url: "/auth/multistep-signup",
+    title: "Personal Info Signup",
+    icon: <FontAwesomeIcon icon={faUser} />,
+    url: "/auth/personalinfo-signup",
   },
   {
-    title: "Persinal Info Signup",
-    icon: <SettingsSVG />,
-    url: "/auth/personalinfo-signup",
+    title: "MultiStep Signup",
+    icon: <FontAwesomeIcon icon={faRightToBracket} />,
+    url: "/auth/multistep-signup",
   },
 ];

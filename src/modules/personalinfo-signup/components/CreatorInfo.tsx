@@ -27,13 +27,7 @@ const CreatorInfo = () => {
         <div className="fv-row mb-10">
           <label className="d-flex align-items-center form-label">
             <span className="required">Shortened Descriptor</span>
-            <span
-              className="lh-1 ms-1"
-              data-bs-toggle="popover"
-              data-bs-trigger="hover"
-              data-bs-html="true"
-              data-bs-content='&lt;div className=&#039;p-4 rounded bg-light&#039;&gt; &lt;div className=&#039;d-flex flex-stack text-muted mb-4&#039;&gt; &lt;i className="ki-duotone ki-bank fs-3 me-3"&gt;&lt;span className="path1"&gt;&lt;/span&gt;&lt;span className="path2"&gt;&lt;/span&gt;&lt;/i&gt; &lt;div className=&#039;fw-bold&#039;&gt;INCBANK **** 1245 STATEMENT&lt;/div&gt; &lt;/div&gt; &lt;div className=&#039;d-flex flex-stack fw-semibold text-gray-600&#039;&gt; &lt;div&gt;Amount&lt;/div&gt; &lt;div&gt;Transaction&lt;/div&gt; &lt;/div&gt; &lt;div className=&#039;separator separator-dashed my-2&#039;&gt;&lt;/div&gt; &lt;div className=&#039;d-flex flex-stack text-gray-900 fw-bold mb-2&#039;&gt; &lt;div&gt;USD345.00&lt;/div&gt; &lt;div&gt;KEENTHEMES*&lt;/div&gt; &lt;/div&gt; &lt;div className=&#039;d-flex flex-stack text-muted mb-2&#039;&gt; &lt;div&gt;USD75.00&lt;/div&gt; &lt;div&gt;Hosting fee&lt;/div&gt; &lt;/div&gt; &lt;div className=&#039;d-flex flex-stack text-muted&#039;&gt; &lt;div&gt;USD3,950.00&lt;/div&gt; &lt;div&gt;Payrol&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;'
-            >
+            <span className="lh-1 ms-1">
               <i className="ki-duotone ki-information-5 text-gray-500 fs-6">
                 <span className="path1"></span>
                 <span className="path2"></span>
@@ -60,10 +54,6 @@ const CreatorInfo = () => {
           <select
             name="business_type"
             className="form-select form-select-lg form-select-solid"
-            data-control="select2"
-            data-placeholder="Select..."
-            data-allow-clear="true"
-            data-hide-search="true"
           >
             <option></option>
             <option value="1">S Corporation</option>

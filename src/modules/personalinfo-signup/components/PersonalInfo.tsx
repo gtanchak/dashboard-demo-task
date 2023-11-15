@@ -4,11 +4,7 @@ const PersonalInfo = () => {
       <div className="bg-body d-flex flex-column flex-center rounded-4 w-md-600px p-10">
         <div className="d-flex flex-center flex-column align-items-stretch h-lg-100 w-md-400px">
           <div className="d-flex flex-center flex-column flex-column-fluid pb-15 pb-lg-20">
-            <form
-              className="form w-100"
-              data-kt-redirect-url="authentication/layouts/overlay/sign-in.html"
-              action="#"
-            >
+            <form className="form w-100" action="#">
               <div className="text-center mb-11">
                 <h1 className="text-gray-900 fw-bolder mb-3">Personal Info</h1>
 
